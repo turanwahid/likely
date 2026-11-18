@@ -1,0 +1,14 @@
+{
+  "name": "likely",
+  "version": "1.0.0",
+  "description": "Likely — the social app where every like is a lottery ticket.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "reset": "rm -f data/likely.db data/likely.db-wal data/likely.db-shm"
+  },
+  "engines": { "node": ">=22.13" },
+  "license": "MIT"
+}

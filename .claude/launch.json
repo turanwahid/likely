@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "likely", "runtimeExecutable": "env", "runtimeArgs": ["PORT=3210", "node", "server.js"], "port": 3210 }
+  ]
+}

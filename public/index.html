@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Likely</title>
+  <meta name="description" content="The social app where every like is a lottery ticket." />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="logo" href="#/">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 28s-11-6.6-11-15A6 6 0 0 1 16 9a6 6 0 0 1 11 4c0 8.4-11 15-11 15z" fill="var(--like)"/><circle cx="16" cy="15.5" r="4.6" fill="var(--gold)"/><text x="16" y="18.2" text-anchor="middle" font-size="7" font-weight="800" fill="#7a4b00">$</text></svg>
+        <span>Likely</span>
+      </a>
+      <nav class="nav" id="nav"></nav>
+      <button class="btn btn-primary btn-block" data-action="compose-focus">New post</button>
+    </aside>
+
+    <main class="main" id="main" tabindex="-1"></main>
+
+    <aside class="rail" id="rail"></aside>
+  </div>
+
+  <nav class="bottom-nav" id="bottom-nav"></nav>
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+  <div class="modal-root" id="modal-root"></div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
